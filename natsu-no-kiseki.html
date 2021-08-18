@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.scrollablelink.js" type="text/javascript"></script>
+<script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
+
+<script src="js/jquery.textillate.js" type="text/javascript"></script>
+<script src="js/jquery.lettering.js" type="text/javascript"></script>
+
+<script src="js/pagetop.fade.js" type="text/javascript"></script>
+
+<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/seika.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/colorbox.css">
+
+<script>
+
+
+//タイトル文字のアニメーション------------------------------------------------
+
+$(function () {
+    $('#t_ef1').textillate({
+		loop: false, //Inのエフェクトのみで、outのエフェクトは行わない。
+		in: {
+			delay:50,
+			shuffle:true,
+			effect:"bounceInDown"
+		},
+		
+		out: {
+			delay:50,
+			effect:"bounceOutUp"
+		}
+	});
+})
+
+$(function () { 
+    $('#t_ef2').textillate({
+		loop: false, //Inのエフェクトのみで、outのエフェクトは行わない。
+		initialDelay: 1200,  //アニメーションの遅延時間
+		in: {
+			delay:80,
+			shuffle:false,
+			effect:"fladeIn"
+		},
+		
+		out: {
+			delay:50,
+			effect:"fadeOut"
+		}
+	});
+})
+
+//リストのアニメーション-----------------------------------------------------
+
+$(function() {
+	$('#fadein_list ul li').hide(); //(hide)でリストの非表示
+	$('#fadein_list ul li').each(function(i) { //(each)で繰り返し処理部分
+		$(this).delay(250*i).fadeIn(3500); //遅延させて表示(3.5秒以内に0.25秒毎に表示)
+	});
+});
+
+//lightbox風のアニメーション--------------------------------------------------------
+
+$(function() {
+	$(".iframe").colorbox({
+		iframe:true,
+		width:"1251px",
+		height:"736px",
+		opacity:0.7
+	});
+});
+
+//スムーズスクロール--------------------------------------------------------
+
+$(function() {
+	$('.mainnav a').smoothScroll({
+		speed:1000,
+	});
+});
+
+//------------------------------------------------------------------------
+
+
+</script>
+
+
+
+
+<title>Natsu no Kiseki</title>
+</head>
+
+<body>
+
+<div id="homeP" class="pagebox">
+	<section>
+		<h1 id="t_ef1">Natsu no Kiseki</h1>
+        <div id="t_ef2">Senshu-u University Portfolio</div>
+        
+<!--        
+        <nav>
+             <div id="fadein_list">
+                  <ul class="mainnav">
+                       <li id="ef2"><a href="#s1"
+                       style="
+                       background:url(image/blue_boll.png);
+                       background-position:top;
+                       background-repeat:no-repeat;
+                       background-size:340px;">
+                       Information Expression Seminar</a></li>
+                       <li id="ef3"><a href="#s2"
+                       style="
+                       background:url(image/red_boll.png);
+                       background-position:top;
+                       background-repeat:no-repeat;
+                       background-size:340px;">
+                       Information Design</a></li>
+                       <li id="ef4"><a href="#s3"
+                       style="
+                       background:url(image/blue_boll.png);
+                       background-position:top;
+                       background-repeat:no-repeat;
+                       background-size:340px;">
+                       Graphic Design</a></li>
+                       <li id="ef5"><a href="#s4"
+                       style="
+                       background:url(image/green_boll.png);
+                       background-position:top;
+                       background-repeat:no-repeat;
+                       background-size:340px;">
+                       Project</a></li>
+                  </ul>
+             </div>
+        </nav>
+-->        
+        
+    </section>
+</div>
+
+<div id="page0" class="pagebox">
+	<section>
+		<h2 id="s0">Profile</h2>
+        <div class="main_pf">
+            <img class="pf_img" src="image/pf_2.png">
+            <p>田島 夏樹</p>
+            <article>
+                <p id="pf_uni">専修大学 ネットワーク情報学部 ネットワーク情報学科</p>
+                <p>
+                ゲームと読書、実況動画を見るのが好きな地味なメガネ学生です。大学に入学してからは1人で気ままに遠出することも楽しみの1つです。
+                </p>
+                <p>
+                この学部に入るまで私はweb制作はもちろんデザインについてもほぼ無関心な学生でした。この大学に来てからwebやプログラミングなど様々なことを知り、苦労しながら体験してきました。その中で--割りと--できたのがweb制作ということでした。2、3年次ではおもにデザイン系の授業を履修してきました。
+                </p>
+                <p>
+                今現在、 web制作に必要な「HTML(HTML5)」「CSS(CSS3)」の技術向上の為に必死になって勉強中です。また、web上のアニメーションも好きなのでJQueryなどのjavascriptも少しずつ勉強中・・・
+                </p>
+            </article>
+        
+        </div>
+        
+    </section>
+</div>
+
+<div id="page1" class="pagebox">
+	<section>
+		<h2 id="s1">Interaction Design Basic Seminar</h2>
+        <h3>〜 インタラクションデザイン基礎演習 〜</h3>
+        
+        <div class="main">
+        
+            <section>
+            <a class="iframe" href="lb_guppy.html"><img class="f_img" src="image/h_guppy.png"></a>
+            <h4>動きのデザイン 1</h4>
+            <h5>グッピー制作</h5>
+            </section>
+            
+            <section>
+            <a class="iframe" href="lb_guppy-flash.html"><img class="f_img" src="image/h_guppy-anime.png"></a>
+            <h4>動きのデザイン 2</h4>
+            <h5>アニメーション制作</h5>
+            </section>
+            
+            <section>
+            <a class="iframe" href="lb_dogcafe.html"><img class="f_img" src="image/h_dogcafe.png"></a>
+            <h4>情報の設計 1</h4>
+            <h5>カードソーティングを用いたグループ分け</h5>
+            </section>
+            
+            <section>
+            <a class="iframe" href="lb_dogcafe-pro.html"><img class="f_img" src="image/h_dogcafe-pro.png"></a>
+            <h4>情報の設計 2</h4>
+            <h5>「Indigo Studio」によるプロトタイプ制作</h5>
+            </section>
+            
+            <section>
+            <a class="iframe" href="lb_dogcafe-webpro.html"><img class="f_img" src="image/h_dogcafe-web.png"></a>
+            <h4>情報の設計 3</h4>
+            <h5>webプロトタイプ制作</h5>
+            </section>
+        
+        </div>
+            
+    </section>
+</div>
+
+<div id="page2" class="pagebox">
+	<section>
+		<h2 id="s2">Project</h2>
+        <h3>〜 プロジェクト 〜</h3>
+        
+        <div class="main">
+        
+            <section>
+                <a class="iframe" href="lb_zenki-poster.html"><img class="f_img" src="image/h_zenki-poster.png"></a>
+                <h4>広報用ポスター制作</h4>
+            </section>
+            
+            <section>
+                <a class="iframe" href="lb_kouki-poster.html"><img class="f_img" src="image/h_kouki-poster.png"></a>
+                <h4>操作説明用ポスター制作</h4>
+            </section>
+        
+        </div>
+        
+    </section>
+</div>
+
+
+</body>
+
+</html>
