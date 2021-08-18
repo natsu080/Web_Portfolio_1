@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.slideviewer.1.2.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+<script>
+
+$(function() {
+	$('div#content_left').siideView({
+		easeFunc:'easeInOutBack',
+		esseTime:1200,
+		toolTip:true,
+		ttOpacity:0.5
+	});
+});
+
+</script>
+
+<title>ポートフォリオ</title>
+</head>
+
+<body>
+    <div id="lightbox_main">
+    
+    <div id="title">
+        <h1>情報の設計 1 「カードソーティング」</h1>
+    </div>
+    
+    <div id="content_left">
+        <img id="lightbox_img" src="image/dogcafe.png" alt="slideshow1" width="500" height="440">
+    </div>
+    
+    <div id="content_right">
+        <p>
+        この課題からは相手（クライアント）を考慮した情報の設計やサイト作りを行います。その最初の課題がカードソーティングを用いたグループ分けであります。カードソーティングとは「情報をカード型にして並べ，並べ替えをしながら分類や分析を行う手法」です。
+        </p>
+        <p>
+        今回は犬に関する情報を整理し二種類のグループ分けを行いました。１つ目のグループは犬の「性格」、2つ目は「値段」を重点的に分類しました。    
+        </p>
+        <p>
+        <br/>
+        <a href="IxD/DogCafe/DogCafe_1.pdf">グループ分け１「犬カフェで犬とふれあい初体験」</a>
+        <br/>
+        <a href="IxD/DogCafe/DogCafe_2.pdf">グループ分け２「犬カフェでふれあった犬を飼える」</a>
+        </p>
+                
+    </div>
+        
+    </div>
+
+</body>
+</html>
