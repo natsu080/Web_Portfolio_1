@@ -1,0 +1,7 @@
+﻿#home +label {
+    display: none !important;
+}
+
+#restart +label {
+    display: block !important;
+}
