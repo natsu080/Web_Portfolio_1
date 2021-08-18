@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :style.css
+ style info :コンテンツエリア関係 他
+ 
+=================================================================== */
+
+
+
+/*----------------------------------------------------
+	#container
+	全体部分
+----------------------------------------------------*/
+#container{
+    width: 900px;
+	background: #FFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	border-left:1px solid #666;
+	border-right:1px solid #666;
+	
+	
+
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------
+	#header
+		ヘッダ部分
+----------------------------------------------------*/
+#header{
+	width: 900px;
+	height:100px;
+	background: #FFF;
+	padding:0px;
+	margin:0px;
+}
+
+#header p {
+	padding:20px;
+	font-size:20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	line-height:1,2;
+	color:#666;
+}
+
+/*----------------------------------------------------
+	#menu
+		メニュー部分
+----------------------------------------------------*/
+#menu{
+	width:900px;
+	background:#777;
+	clear:both;
+}
+
+#menu ul{
+	height:auto;
+	margin:0;
+	padding:0;
+	line-height:100%;
+	list-style-type:none;
+}
+
+#menu ul li{
+	margin:0;
+	padding:0;
+	float:left;
+	width:150px;
+	text-align:center;
+	font-size:14px;
+}
+
+#menu ul li a{
+	border:1px solid #666;
+	padding:8px 4px 8px 4px;
+	display:block;
+	position:relative;
+	color:#333;
+	background-color:#FFF;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	border-color:#CCC;
+	color:#0333;
+	background-color:#999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+	#main
+		ページ部分
+----------------------------------------------------*/
+#main {
+	clear:both;
+	width: 900px;
+	background: #FFF;
+}
+
+
+
+/*----------------------------------------------------
+	#contents
+		コンテンツ部分
+----------------------------------------------------*/
+#contents {
+	float: left;
+	width: 630px;
+	background: #FFF;
+	margin-left:125px;
+	margin-top:50px;
+	margin-bottom:200px;
+}
+
+#contents2 {
+	float: left;
+	width: 630px;
+	background: #FFF;
+	margin-left:50px;
+	margin-top:50px;
+	margin-bottom:200px;
+}
+
+
+#contents table,#main ol,#main ul,#main dl,#main blockquote,#main pre,#main p {
+	margin-bottom: 1em;
+}
+
+
+
+/* -----------------------------------------------------------
+	#sub
+		サブメニュー
+----------------------------------------------------------- */
+#sub_menu {
+	float: left;
+	width: 200px;
+	background: #FFF;
+}
+
+
+
+
+/*--------------------------------------
+  sub_menu 
+---------------------------------------*/
+
+
+
+
+#sub_menu  {
+     width:190px;
+	 margin-top:30px;
+	 margin-left:10px;
+	 margin-right:0px;
+	 margin-bottom:50px;
+	 height:auto;
+	 float:left;
+	 padding:0px;
+	 font-size:small;
+	
+}
+
+#sub_menu ul {
+	margin: 0px;
+	padding: 0px;
+	background: #FFF;
+    text-decoration: none;
+	text-indent:24px;
+	list-style:none;
+	list-style-position:outside;
+	border-style:solid;
+	border-color:#666666;
+	background-color:#FFF;
+	border-width: 1px 0 0 0;
+}
+
+
+
+
+#sub_menu ul li {
+    
+	font-size: 12px;
+	border-style:solid;
+	border-color:#666666;
+	border-width: 0 0 1px 0;
+	letter-spacing: 0.2em;
+	color: #ccc;
+	
+}
+
+
+
+#sub_menu ul li .menu-here {
+	font-size: 12px;
+	border-width: 0 0 1px 0;
+	letter-spacing: 0.2em;
+	color: #ccc;
+	padding: 6px 0px 6px 0px;
+	color: #000000;
+	background-color:#ccc;
+	
+}
+
+#sub_menu ul li a {
+	display: block;
+	padding: 6px 0px 6px 0px;
+	text-decoration: none;
+	list-style:none;
+	border-bottom: 0px ;
+}
+
+
+
+#sub_menu ul li a:link {
+	color: #666666;
+}
+
+#sub_menu ul li a:visited {
+	color: #666666;
+}
+
+#sub_menu ul li a:hover {
+	color:#333333;
+	background-color:#999999;
+}
+
+
+
+
+/*----------------------------------------------------
+	#footer
+		フッタ部分
+----------------------------------------------------*/
+#footer{
+	clear:both;
+	width:881px;
+	height:200px;
+    border-top:1px solid #666;
+    padding-top:7px;
+    padding-left:20px;
+    font-size:x-small;
+    color:#666666;
+}
+
+
+
+/*--------------------------------------
+  タグの再定義 
+---------------------------------------*/
+
+h1 {
+	font-size:200%;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding-left:10px;
+	border-left:10px double #CCC;
+	border-bottom:10px solid #CCC
+
+}
+
+h2 {
+	font-size:140%;
+	margin-top:20px;
+	margin-bottom:20px;
+	border-bottom:2px dotted #CCC;
+	
+}
+
+
+h3 {
+	font-size:110%;
+	margin-top:30px;
+	margin-bottom:15px;
+
+}
+
+p1 {
+	margin-left:130px;
+}
+
+h1_1 {
+	font-size:20px;
+	color:#CCC;
+}
+
+
+
+
+
+
+#last_menu {
+	width:100px;
+	clear:both;
+}
+
+#last_menu ul{
+	height:auto;
+	margin-top:50px;
+	margin-left:200px;
+	padding:0;
+	line-height:100%;
+	list-style-type:none;
+}
+
+#last_menu ul li{
+	margin:0;
+	padding:0;
+	float:left;
+	width:150px;
+	text-align:center;
+	font-size:14px;
+}
+
+#last_menu ul li a{
+	border:1px solid #666;
+	padding:8px 4px 8px 4px;
+	display:block;
+	position:relative;
+	color:#333;
+	background-color:#CCC;
+	text-decoration:none;
+}
+
+#last_menu ul li a:hover{
+	border-color:#CCC;
+	color:#FFF;
+	background-color:#000;
+}
+
+
+/*----------------------------------------------------
+	汎用class
+----------------------------------------------------*/
+.imgR {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.imgL {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.btn {
+	text-align: center;
+}
+
+/* 外部リンクは別窓用の指定 */
+.externalIcon {
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+/* clearfix */
+#hoge:after {
+	content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
